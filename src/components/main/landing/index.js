@@ -8,8 +8,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-import { ROUTE_SLUG } from 'config';
-
 import USAMap from 'react-usa-map';
 
 export class LandingPage extends Component {
@@ -37,7 +35,7 @@ export class LandingPage extends Component {
                     </div>
                 </div>
                 <div className="landing-map-wrap">
-                    <Link className="get-started-btn" to="`${ROUTE_SLUG}/map`">GET STARTED</Link>
+                    <Link className="get-started-btn" to="/map">GET STARTED</Link>
                     <USAMap defaultFill={"transparent"} 
                             title={"Map of the United States of America"}/>
                             
